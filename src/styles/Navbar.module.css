@@ -1,0 +1,58 @@
+/* Navbar.module.css */
+:root {
+  --primary-color: #ffffff;
+  --text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
+  --hover-opacity: 0.85;
+  --logo-bg: #ffffff;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 24px;
+  background: linear-gradient(135deg, #0077b6, #023e8a);
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
+  border-radius: 12px;
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+.navbar-title {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: var(--primary-color);
+  text-shadow: var(--text-shadow);
+  letter-spacing: 0.8px;
+  transition: transform 0.3s ease;
+}
+
+.navbar-title:hover {
+  transform: scale(1.05);
+}
+
+.navbar-button {
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--primary-color);
+  transition: color 0.3s ease, transform 0.2s ease;
+  padding: 8px 16px;
+  border-radius: 8px;
+}
+
+.navbar-button:hover {
+  color: rgba(255, 255, 255, var(--hover-opacity));
+  transform: translateY(-2px);
+}
+
+.company-logo {
+  height: 42px;
+  border-radius: 10px;
+  background-color: var(--logo-bg);
+  padding: 6px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.company-logo:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.3);
+}
